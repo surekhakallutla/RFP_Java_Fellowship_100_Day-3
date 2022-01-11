@@ -28,15 +28,15 @@ public class LineComparisionUC3 {
 		double line2 = Math.sqrt((x4-x3)*(x4-x3) + (y4-y3)*(y4-y3));	 
 		System.out.println("distancebetween Line-2 Co-ordinates"+"("+x3+","+y3+"),"+"("+x4+","+y4+")===>"+line2);
 			
-		if(line2 > line1)
-			System.out.println("Line-1 is Lessthan Line-2");
+		if(Double.compare(line1, line2) < 0)
+			System.out.println("Line-1 is Less than Line-2");
 
-		else if(line1 > line2)
+		else if(Double.compare(line1, line2) > 0)
 			System.out.println("Line-1 is Greater than Line-2");
 		
 		else
 			System.out.println(" Both Line-1 and Line-2 are Equal");
-			
+	
 		
 	}
 
